@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    background: hsl(0, 0%, 100%);
+}
+.container{
+    background: hsl(0, 0%, 100%);
+    width: 75;
+    height: 100%;
+    padding: 40px;
+    box-shadow: 0px 1px 20px 20px #f4f0f0;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap:px;
+}
+.left-header h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    font-family: "League Spartan", sans-serif; 
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.left-header p{
+    width: 380px;
+    color: hsl(303, 10%, 53%);
+}
+ .first_star, .second_star, .tree_star{
+    display: flex;
+    margin: 10px;
+    background-color: hsla(333, 80%, 67%, 0.125);
+    color: hsl(300, 43%, 22%);
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    width: 370px;
+    border-radius: 5px;
+}
+.star_para{
+    margin-left:20px ;
+}
+.roted{
+    margin-left:20px ;
+}
+.second_star{
+    margin-left: 35px;
+}
+.tree_star{
+    margin-left: 75px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.man, .first_woman, .second_woman{
+    background:  hsl(300, 43%, 22%);
+    color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.title{
+    display: flex;
+    justify-content: flex-start;
+}
+.first_img, .second_img, .tree_img{
+    text-align: center;
+    height: 40px;
+    border-radius: 100%;
+    padding: 20px;
+    object-fit: cover;
+}
+.text{
+   margin-top: 0;
+   padding-left: 20px;
+}
+.verified{
+    color: hsl(333, 80%, 67%);
+}
+@media(max-width: 1030px) {
+    body{
+        margin-top: auto;
+    }
+    .container{
+        padding: 0;
+        width: 360px;
+    }
+    header{
+        grid-template-columns: 2fr;
+    }
+    .left-header h1{
+        text-align: center;
+    }
+    .left-header p{
+        text-align: center;
+        width: 340px;
+    }
+    .rigth-header{
+        margin: 0px;
+        justify-content: center;
+    }
+    .first_star, .second_star, .tree_star{
+        display: block;
+        margin: auto;
+        width: 300px;
+        font-size: 10px;
+    }
+    .imgs{
+        display: flex;
+        justify-content: center;
+    }
+    .icon-start{
+    padding: 5px;
+    }
+    .roted{
+        padding-bottom: 5px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .main{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .man, .first_woman, .second_woman{
+        margin: auto;   
+    }
+}
